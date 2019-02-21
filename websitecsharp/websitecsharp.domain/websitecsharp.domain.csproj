@@ -48,11 +48,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="entities\Gender.cs" />
     <Compile Include="entities\scoredata.cs" />
     <Compile Include="entities\person.cs" />
     <Compile Include="Migrations\201902120238364_Initial migration.cs" />
     <Compile Include="Migrations\201902120238364_Initial migration.Designer.cs">
       <DependentUpon>201902120238364_Initial migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902202340261_new fields.cs" />
+    <Compile Include="Migrations\201902202340261_new fields.Designer.cs">
+      <DependentUpon>201902202340261_new fields.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +70,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201902120238364_Initial migration.resx">
       <DependentUpon>201902120238364_Initial migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902202340261_new fields.resx">
+      <DependentUpon>201902202340261_new fields.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -64,6 +64,11 @@ namespace websitecsharp.web.Controllers
                 : "";
 
             var userId = User.Identity.GetUserId();
+
+            //added to create session id
+            Session["userId"] = userId;
+
+
             var model = new IndexViewModel
             {
                 HasPassword = HasPassword(),

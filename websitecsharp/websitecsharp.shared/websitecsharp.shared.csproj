@@ -48,16 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="enums\Gender.cs" />
+    <Compile Include="orchestrators\PersonOrchestrator.cs" />
     <Compile Include="orchestrators\webapiorchestrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="enums\" />
-    <Folder Include="viewmodels\" />
+    <Compile Include="viewmodels\PersonViewModel.cs" />
+    <Compile Include="viewmodels\UpdateUserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\websitecsharp.domain\websitecsharp.domain.csproj">
+      <Project>{a82486d0-7d21-4222-bc31-a37cd43447e0}</Project>
+      <Name>websitecsharp.domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
