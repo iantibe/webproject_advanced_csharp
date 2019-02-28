@@ -12,5 +12,6 @@ namespace websitecsharp.domain
     {
         public DbSet<person> Person { get; set; }
         public DbSet<scoredata> HighScore { get; set; }
+        public DbSet<Error> ErrorDatabase { get; set; }
     }
 }

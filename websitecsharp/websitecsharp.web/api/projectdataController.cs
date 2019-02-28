@@ -8,7 +8,7 @@ using websitecsharp.shared.orchestrators;
 
 namespace websitecsharp.web.api
 {
-    [Route("api/getprojectmembers")]
+    [Route("api/v1/getprojectmembers")]
     public class projectdataController : ApiController
     {
         public readonly webapiorchestrator _webapiorchestrator;

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace websitecsharp.shared.viewmodels
+namespace websitecsharp.shared.Interface
 {
-   public class PersonViewModel
+    interface iwebapiorchestrator
     {
-        public List<UpdateUserViewModel> Person { get; set; }
+        String GetInformation();
     }
 }

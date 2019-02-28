@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace websitecsharp.shared.viewmodels
 {
-   public class PersonViewModel
+    public class ErrorDescription
     {
-        public List<UpdateUserViewModel> Person { get; set; }
+        public List<ErrorViewModel> Error { get; set; }
     }
 }
