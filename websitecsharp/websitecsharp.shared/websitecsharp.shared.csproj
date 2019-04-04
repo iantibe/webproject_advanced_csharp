@@ -37,6 +37,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -49,15 +52,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="enums\Gender.cs" />
+    <Compile Include="Interface\iDatabaseService.cs" />
     <Compile Include="Interface\iErrorOrchestrator.cs" />
+    <Compile Include="Interface\iHighScore.cs" />
     <Compile Include="Interface\iPersonOrchestrator.cs" />
     <Compile Include="Interface\iwebapiorchestrator.cs" />
     <Compile Include="orchestrators\ErrorOrchestrator.cs" />
+    <Compile Include="orchestrators\HighScoreOrchestrator.cs" />
     <Compile Include="orchestrators\PersonOrchestrator.cs" />
     <Compile Include="orchestrators\webapiorchestrator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\DatabaseService.cs" />
     <Compile Include="viewmodels\ErrorDescription.cs" />
     <Compile Include="viewmodels\ErrorViewModel.cs" />
+    <Compile Include="viewmodels\HighScoreViewModel.cs" />
     <Compile Include="viewmodels\PersonViewModel.cs" />
     <Compile Include="viewmodels\UpdateUserViewModel.cs" />
   </ItemGroup>

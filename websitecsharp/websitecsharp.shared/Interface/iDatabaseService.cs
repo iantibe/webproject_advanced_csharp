@@ -7,10 +7,9 @@ using websitecsharp.shared.viewmodels;
 
 namespace websitecsharp.shared.Interface
 {
-    public interface iErrorOrchestrator
+    public interface iDatabaseService
     {
-        Task<int> AddErrorRecord(ErrorViewModel ErrorToAdd);
-        Task GenerateError();
-        Task RecordErrorAsync(Exception ex);
+        List<HighScoreViewModel> GenerateData();
+        void AddToDataBase(HighScoreViewModel ItemToAdd);
     }
 }

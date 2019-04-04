@@ -4,13 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using websitecsharp.shared.Interface;
 using websitecsharp.shared.orchestrators;
 
 namespace websitecsharp.web.Controllers
 {
     public class ErrorController : Controller
     {
-        private ErrorOrchestrator _errororchestrator = new ErrorOrchestrator();
+        private readonly iErrorOrchestrator _errororchestrator;
+
+        public ErrorController(iErrorOrchestrator errororchestrator)
+        {
+            _errororchestrator = errororchestrator;
+        }
+
+
 
         // GET: Error
         public ActionResult Error()

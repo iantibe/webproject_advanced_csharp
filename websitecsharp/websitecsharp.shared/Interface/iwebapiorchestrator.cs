@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace websitecsharp.shared.Interface
 {
-    interface iwebapiorchestrator
+    public interface iwebapiorchestrator
     {
         String GetInformation();
     }

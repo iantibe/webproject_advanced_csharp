@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using websitecsharp.shared.Interface;
 using websitecsharp.shared.orchestrators;
 using websitecsharp.shared.viewmodels;
 
@@ -18,7 +19,15 @@ namespace websitecsharp.web.Controllers
             return View();
         }
 
-        private PersonOrchestrator _personorchestrator = new PersonOrchestrator();
+        private readonly iPersonOrchestrator _personorchestrator;
+
+        public PersonController(iPersonOrchestrator personorchestrator)
+        {
+            _personorchestrator = personorchestrator;
+        }
+
+
+
 
         // GET: Person
         public async Task<ActionResult> Index()

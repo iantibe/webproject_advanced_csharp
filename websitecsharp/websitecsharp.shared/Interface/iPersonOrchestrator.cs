@@ -7,7 +7,7 @@ using websitecsharp.shared.viewmodels;
 
 namespace websitecsharp.shared.Interface
 {
-    interface iPersonOrchestrator
+    public interface iPersonOrchestrator
     {
         Task<List<UpdateUserViewModel>> GetPeople();
         Task<int> CreatePerson(UpdateUserViewModel person);
